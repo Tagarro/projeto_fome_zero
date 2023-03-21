@@ -1,8 +1,11 @@
 import streamlit as st
+from PIL import Image
 
 st.set_page_config(page_title="Home", page_icon="🏠")
 
-
+image_path = 'imagem_fome_zero.png'
+image = Image.open(image_path)
+st.sidebar.image(image, width = 100)
 st.sidebar.markdown('# Fome Zero')
 st.sidebar.markdown("""---""")
 
