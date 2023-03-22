@@ -135,7 +135,7 @@ st.sidebar.markdown("""---""")
 
 # Countries selection
 
-country_select = st.sidebar.multiselect('Select the countries: ', ['Philippines', 'Brazil', 'Australia', 'United States of America', 'Canada', 'Singapure', 'United Arab Emirates', 'India', 'Indonesia', 'New Zeland', 'England', 'Qatar', 'South Africa', 'Sri Lanka', 'Turkey'], default = ['Philippines', 'Brazil', 'Australia', 'Canada', 'Singapure', 'United Arab Emirates', 'Indonesia', 'New Zeland', 'England', 'Qatar', 'South Africa', 'Sri Lanka', 'Turkey'])
+country_select = st.sidebar.multiselect('Select the countries: ', ['Philippines', 'Brazil', 'Australia', 'United States of America', 'Canada', 'Singapure', 'United Arab Emirates', 'India', 'Indonesia', 'New Zeland', 'England', 'Qatar', 'South Africa', 'Sri Lanka', 'Turkey'], default = ['Brazil', 'Australia', 'Canada', 'Singapure', 'Indonesia', 'New Zeland', 'Qatar', 'South Africa', 'Sri Lanka', 'Turkey'])
 
 countries_selection = df1['country'].isin(country_select)
 df1 = df1.loc[countries_selection, :].reset_index()
